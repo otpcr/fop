@@ -1,0 +1,48 @@
+# This file is placed in the Public Domain.
+
+[build-system]
+requires = [
+    'setuptools>=43.0.0',
+    'wheel'
+]
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = 'fop'
+version = '1'
+authors = [
+    {name = 'Bart Thate', email = 'bthate@dds.nl' },
+]
+description = 'Functional Object Programming'
+readme = 'README.rst'
+license = { text='Public Domain'}
+dependencies = [
+    'fop',
+]
+classifiers=[
+    'Development Status :: 4 - Beta',
+    'License :: Public Domain',
+    'Operating System :: Unix',
+    'Programming Language :: Python :: 3',
+    'Topic :: Utilities'
+]
+
+
+[project.urls]
+'home'   = 'https://pypi.org/project/fop'
+'bugs'   = 'https://github.com/otpcr/fop/issues'
+'source' = 'https://github.com/otpcr/fop'
+
+
+[tool.setuptools]
+script-files = [
+    'bin/fop',
+    'bin/fopctl',
+    'bin/fopd',
+    'bin/fops'
+]
+packages = [
+    'fop',
+    'fop.modules'
+]
